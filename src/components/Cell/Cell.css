@@ -1,0 +1,31 @@
+.Sun {
+  color: pink;
+}
+.Mon {
+  color: purple;
+  grid-column-start: 2;
+}
+
+.Tue {
+  color: green;
+  grid-column-start: 3;
+}
+.Wed {
+  color: aqua;
+  grid-column-start: 4;
+}
+
+.Thu {
+  color: red;
+  grid-column-start: 5;
+}
+
+.Fri {
+  color: orange;
+  grid-column-start: 6;
+}
+
+.Sat {
+  color: yellow;
+  grid-column-start: 7;
+}
