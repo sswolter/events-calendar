@@ -1,0 +1,121 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+}
+.Sun {
+  grid-column-start: 1;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Mon {
+  grid-column-start: 2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Tue {
+  grid-column-start: 3;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Wed {
+  grid-column-start: 4;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Thu {
+  grid-column-start: 5;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Fri {
+  grid-column-start: 6;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Sat {
+  grid-column-start: 7;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CurrentDay {
+  background-color: rgb(159, 167, 148);
+  border-radius: 50%;
+}
+
+.modal {
+  background-color: #242424;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.modal_day {
+  font-weight: bold;
+}
+
+.modal_date {
+  font-weight: 600;
+  color: #888;
+}
+
+.addEvent {
+  color: rgb(205, 216, 191);
+  cursor: pointer;
+}
+
+.addEvent:hover {
+  color: rgb(171, 179, 160);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
