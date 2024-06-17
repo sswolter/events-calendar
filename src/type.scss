@@ -1,0 +1,43 @@
+@mixin header-lg {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@mixin header-md {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+@mixin label {
+  background-color: $light;
+  font-weight: bold;
+  color: $dark;
+  padding: 5px 9px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+@mixin link {
+  font-weight: normal;
+  color: $dark;
+  font-size: 14px;
+  cursor: pointer;
+}
+$darker: #363963;
+$dark: #666efd;
+$light: #dbdcf4;
+$lighter: #f3f3ff;
+$grey: #a8a8a8;
+$dark-grey: #888;
+$font-sm: 14px;
+
+@mixin grid($pos) {
+  grid-column-start: $pos;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

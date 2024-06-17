@@ -1,0 +1,22 @@
+@use "../../type.scss" as *;
+
+.Day {
+  text-align: center;
+  width: 100%;
+
+  &_Event {
+    margin: auto;
+    width: 4px;
+    height: 2px;
+    background-color: $dark;
+    border-radius: 7px;
+  }
+
+  &_NoEvent {
+    margin: auto;
+    width: 4px;
+    height: 2px;
+    background-color: white;
+    border-radius: 7px;
+  }
+}

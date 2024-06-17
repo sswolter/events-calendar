@@ -1,0 +1,55 @@
+@use "../../type.scss" as *;
+
+.Form {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Input {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+
+  > label {
+    width: 100px;
+    padding-right: 5px;
+  }
+  > input {
+    border: 1px solid $grey;
+    border-radius: 4px;
+    padding-left: 2px;
+    width: 150px;
+  }
+}
+
+.Btn {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  &_Ac {
+    margin-right: 20px;
+    background-color: $dark;
+    color: $lighter;
+  }
+}
+
+.Error {
+  font-size: 16px;
+  text-align: center;
+  color: $darker;
+  padding: 20px;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+::-webkit-calendar-picker-indicator {
+  height: 8px;
+  width: 8px;
+}

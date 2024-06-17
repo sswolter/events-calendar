@@ -1,0 +1,78 @@
+@use "../../type.scss" as *;
+
+.ID {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  cursor: default;
+}
+
+.Close {
+  cursor: pointer;
+  padding-bottom: 100px;
+}
+
+input {
+  border: none;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.EventInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  max-width: 70vw;
+  margin: auto;
+  padding-left: 30px;
+
+  &_T {
+    > input {
+      @include header-lg;
+    }
+  }
+
+  &_I {
+    padding-right: 5px;
+  }
+
+  &_Lo {
+    display: flex;
+    padding: 5px 0;
+  }
+
+  &_Date {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Btn {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  &_Ac {
+    margin-right: 20px;
+    background-color: $dark;
+    color: $lighter;
+  }
+}
+
+.Error {
+  font-size: 16px;
+  text-align: center;
+  color: $darker;
+  padding: 20px;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}

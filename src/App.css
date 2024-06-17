@@ -1,0 +1,88 @@
+/* #root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+/* padding: 2rem;
+  text-align: center; 
+}*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+}
+.Sun {
+  grid-column-start: 1;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Mon {
+  grid-column-start: 2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Tue {
+  grid-column-start: 3;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Wed {
+  grid-column-start: 4;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Thu {
+  grid-column-start: 5;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Fri {
+  grid-column-start: 6;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Sat {
+  grid-column-start: 7;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CurrentDay {
+  background-color: #f3f3ff;
+  border-radius: 50%;
+}
+
+nav {
+  text-decoration: none;
+}

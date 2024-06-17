@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  min-width: 320px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0.5px;
+  font-weight: bold;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

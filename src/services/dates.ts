@@ -1,4 +1,4 @@
-export interface Month {
+export interface IMonth {
   firstDayOfMonth: Date;
   date: number;
   month: number;
@@ -7,6 +7,7 @@ export interface Month {
   numberOfDays: number;
   daysInMonth: Date[];
 }
+
 const getDaysInMonth = (year: number, month: number) => {
   const date = new Date(year, month, 1);
   const days = [];
@@ -40,7 +41,33 @@ export const getMonth = (d: Date) => {
 };
 
 export const nextMonth = (year: number, month: number) => {
-  return new Date(year, month + 2);
+  return new Date(year, month + 1);
+};
+
+export const previousMonth = (year: number, month: number) => {
+  return new Date(year, month - 1);
 };
 
 export const getToday = () => new Date();
+
+export const getDay = () => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return today;
+};
+
+export const ordinal = (number: any) => {
+  if (number > 3 && number < 21) return "th";
+  switch (number % 10) {
+    case 1:
+      return "st";
+    case 2:
+      return "nd";
+    case 3:
+      return "rd";
+    default:
+      return "th";
+  }
+};
+
+export const WeekdayShort = { weekday: "short" };

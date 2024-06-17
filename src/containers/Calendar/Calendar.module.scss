@@ -1,3 +1,36 @@
-.calendar {
-  background-color: white;
+@use "../../type.scss" as *;
+
+.Calendar {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  &_Month {
+    @include header-md;
+  }
+
+  &_Buttons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $dark-grey;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}
+
+.Div {
+  color: $grey;
+  padding: 2px;
 }

@@ -1,0 +1,39 @@
+@use "../../type.scss" as *;
+
+.Label {
+  padding: 10px 0;
+
+  &_C {
+    @include label;
+  }
+}
+
+.Card {
+  text-align: start;
+  border-radius: 7px;
+  padding: 15px;
+  margin: 2px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $lighter;
+  }
+
+  &_Title {
+    @include header-md;
+    margin: 0;
+  }
+
+  &_Location {
+    display: flex;
+    padding: 5px 0;
+  }
+
+  &_Img {
+    padding-right: 5px;
+  }
+}
+
+span {
+  padding: 10px 0;
+}
